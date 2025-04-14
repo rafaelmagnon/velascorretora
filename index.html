@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velas Corretora de Seguros</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Estilos adicionais diretos (pode jogar no style.css se preferir) */
+
+    .hero {
+      height: 100vh;
+      background-image: url('alegria.jpg.avif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* escurece a imagem p/ dar contraste no texto */
+      z-index: 0;
+    }
+
+    .hero h2, .hero p, .whatsapp-button {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.4em;
+      margin-bottom: 30px;
+      max-width: 700px;
+    }
+
+    .service {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .service h3 {
+      font-size: 2em;
+      color: #111;
+      margin-bottom: 15px;
+    }
+
+    .service p {
+      font-size: 1.2em;
+      color: #444;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Velas Corretora de Seguros</h1>
+    <nav>
+      <a href="#residencial">Residencial</a>
+      <a href="#auto">Auto</a>
+      <a href="#imobiliario">Imobiliário</a>
+      <a href="#fianca">Fiança</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Proteja o que realmente importa</h2>
+      <p>Soluções em seguros para você e sua família</p>
+      <a class="whatsapp-button" href="https://wa.me/5585985780006" target="_blank">
+        Fale conosco no WhatsApp
+      </a>
+    </section>
+  
+    <section id="residencial" class="service">
+      <h3>Seguro Residencial</h3>
+      <p>Garanta a proteção do seu lar contra imprevistos como incêndios, roubos e desastres naturais.</p>
+      <p>Com o seguro residencial, você tem assistência 24h, proteção para bens e reparos emergenciais incluídos. Tranquilidade total para sua casa e sua família.</p>
+    </section>
+  
+    <section id="auto" class="service">
+      <h3>Seguro Auto</h3>
+      <p>Dirija com tranquilidade. Temos as melhores opções de seguro para seu veículo.</p>
+      <p>Cobertura contra colisões, roubo, incêndio e terceiros. Inclui assistência 24h e carro reserva. Segurança e mobilidade em qualquer situação.</p>
+    </section>
+  
+    <section id="imobiliario" class="service">
+      <h3>Seguro Imobiliário</h3>
+      <p>Proteção completa para o seu patrimônio imobiliário com cobertura personalizada.</p>
+      <p>Ideal para imóveis alugados ou comerciais. Oferece garantias contra danos estruturais, incêndios e responsabilidades civis. Segurança para proprietários e investidores.</p>
+    </section>
+  
+    <section id="fianca" class="service">
+      <h3>Seguro Fiança</h3>
+      <p>Facilite o aluguel de imóveis sem precisar de fiador, com total segurança para locadores e inquilinos.</p>
+      <p>Evite burocracias e garanta agilidade na locação. Cobertura para inadimplência, encargos legais e danos ao imóvel. Garantia justa e confiável.</p>
+    </section>
+  
+    <!-- Chamada final com botão -->
+    <section class="service" style="text-align: center;">
+      <h3>Ficou com dúvidas? Estamos aqui pra ajudar!</h3>
+      <p>Fale com a Velas Corretora agora mesmo e receba uma cotação personalizada.</p>
+      <a class="whatsapp-button" href="https://wa.me/5585985780006" target="_blank">
+        Fale conosco no WhatsApp
+      </a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Velas Corretora de Seguros. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
